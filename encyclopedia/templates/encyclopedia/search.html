@@ -5,14 +5,18 @@
 {% endblock %}
 
 {% block body %}
-    <h2>All Pages</h2>
+
+<h3>Search Result:</h3>    
+
+{% if entries %}
 
     <ul>
             {% for entry in entries %}
                 <li><a href="/wiki/{{ entry }}">{{ entry }}</a></li>
             {% endfor %}
-            
-        
     </ul>
+        {% else %}
+         <h4>Request Not Found!</h4>
+        {% endif %}
 
 {% endblock %}

@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+}
+
+
 body {
     margin: 0;
     background-color: white;
@@ -25,6 +30,9 @@ textarea {
     width: 100%;
     font-size: 15px;
     line-height: 15px;
+    border-radius: 2px;
+    outline: none;
+    border: 1px solid black;
 }
 
 .sidebar {
@@ -35,4 +43,15 @@ textarea {
 
 .sidebar h2 {
     margin-top: 5px;
+}
+a {
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color: darkblue;
+}
+textarea{
+    max-height: 50vh;
+    margin: 10px 0;
 }
